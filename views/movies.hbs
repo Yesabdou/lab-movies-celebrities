@@ -1,0 +1,15 @@
+<h2> list of movies  </h2>
+
+{{#each movies }}
+<div>
+{{title }}
+ {{genre}}
+ {{plot }}
+<a href="/movies/{{id}}/edit">edit </a>
+ 
+ <a href="/movies/{{id}}">see more </a>
+ 
+ </div>
+
+
+ {{/each}}

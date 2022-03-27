@@ -1,0 +1,14 @@
+{{#each movie}}
+  <h2>{{title}}</h2>
+  <p>{{genre}}</p>
+  <p>{{plot}}</p>
+  
+  <ul>
+    {{#each cast}}
+      <li><a href='/celebrities/{{id}}'>{{name}}</a>,
+        {{occupation}}
+        <em>{{catchPhrase}}</em></li>
+    {{/each}}
+  </ul>
+  
+{{/each}}
